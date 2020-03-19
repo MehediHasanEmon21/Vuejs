@@ -22,12 +22,7 @@
 
     <div id="our-app">
 
-      <h3>Counter : {{ counter }}</h3>
-      <button @click.once="increment">increment</button><br>
-
-      <div id="parent-div" @click="submitClick">
-          <div id="child-div" @click.stop="submitClick">Click child</div>
-      </div>
+     <input type="text" v-model="name">{{name}}
         
     </div>
 
