@@ -22,16 +22,12 @@
 
     <div id="our-app">
 
-        <div @mousemove="getpos" style="height: 400px; width: 400px; border: 2px solid #333333;">
-        x : {{x}}<br>
-        y : {{y}}
-        </div>
-        <br>
+      <h3>Counter : {{ counter }}</h3>
+      <button @click.once="increment">increment</button><br>
 
-        <div>
-            <button @mouseover="hover" @mouseout="out">hover here</button>
-            <span v-bind:class="{hello:active}">Hello</span>
-        </div>
+      <div id="parent-div" @click="submitClick">
+          <div id="child-div" @click.stop="submitClick">Click child</div>
+      </div>
         
     </div>
 

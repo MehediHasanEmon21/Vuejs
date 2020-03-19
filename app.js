@@ -3,23 +3,17 @@ var app = new Vue({
     data: {
         x: 0,
         y: 0,
-        active: false,
+        counter: 0,
     },
 
     methods: {
 
-        getpos(event){
-            console.log(event)
-            this.x = event.offsetX;
-            this.y = event.offsetY;
+        increment(){
+            this.counter++;
         },
 
-        hover(){
-            this.active = true;
-        },
-
-        out(){
-            this.active = false; 
+        submitClick(){
+            alert('click');
         }
 
     },
