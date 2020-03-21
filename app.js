@@ -1,37 +1,49 @@
+
+Vue.component('test',{
+    template: '<div><p>This is test component</p>My name is {{ name }}.<h2>{{ testMethod() }}</h2><button @click="testclick">click</button></div>',
+    data(){
+        return {
+            name: 'Emon'
+        }
+    },
+    methods: {
+        testMethod(){
+            return 'this is running from test';
+        },
+        testclick(){
+            this.name = 'change';
+        }
+    },
+    computed: {
+
+    },
+
+})
+
+
 var app = new Vue({
-    el: '#our-app',
+    el: '#our-app-1',
     data: {
-        students: ["A","B","C","d"],
-        teachers: [
-            {
-                name: 'Teacher 1',
-                subject: 'subject 1',
-                locations: {
-                    street: 'street 1',
-                    city: 'city 1'
-                }
-            },
 
-            {
-                name: 'Teacher 2',
-                subject: 'subject 2',
-                locations: {
-                    street: 'street 1',
-                    city: 'city 1'
-                }
-            },
+    },
 
-            {
-                name: 'Teacher 3',
-                subject: 'subject 3',
-                locations: {
-                    street: 'street 1',
-                    city: 'city 1'
-                }
-            },
+    methods: {
 
+        
+   
 
-        ]
+    },
+    computed: {
+
+        
+
+    },
+})
+
+var app = new Vue({
+    el: '#our-app-2',
+    data: {
+
     },
 
     methods: {

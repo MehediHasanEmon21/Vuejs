@@ -20,25 +20,15 @@
 </head>
 <body>
 
-    <div id="our-app">
+    <div id="our-app-1">
     
-    <ul>
-        <li v-for="student in students">{{ student }}</li>
-    </ul>
-    <br>
+        <test></test>
+        
+    </div>
 
-    <ul>
-        <li v-for="teacher in teachers">{{ teacher.name }} teaches {{ teacher.subject }} from {{ teacher.locations.street }}, {{ teacher.locations.city }}</li>
-    </ul>
-
-    <br>
-
-    <ul>
-        <li v-for="teacher in teachers">
-            {{ teacher.name }} teaches {{ teacher.subject }}
-            <p v-for="(addr,index) in teacher.locations"> {{ index }}: {{ addr }}</p>
-        </li>
-    </ul>
+    <div id="our-app-2">
+    
+        <test></test>
         
     </div>
 
