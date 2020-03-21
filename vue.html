@@ -21,12 +21,12 @@
 <body>
 
     <div id="our-app">
-
-     <input type="text" v-model="bangla"><br>
-     <input type="text" v-model="english"><br>
-     <input type="text" v-model="maths"><br>
-
-     <h3>{{ totalMarks }}</h3>
+    
+    <button @click="increment">Increment 1</button><br>
+     <p v-if="count == 1">This is value 1</p>
+     <p v-else-if="count == 2">This is value 2</p>
+     <p v-else-if="count == 3">This is value 3</p>
+     <p v-else>This is none value</p>
         
     </div>
 
