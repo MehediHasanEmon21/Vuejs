@@ -22,11 +22,12 @@
 
     <div id="our-app-1">
     
-        <input type="text"  ref="name"><br>
-        <input type="text" ref="email"><br>
-        <p ref="paragraph">This is parahrph</p>
+      
 
-        <button @click="btnClick">Click</button>
+        <button @click="changeValue" title="old title" v-custom-directive:channel.a="message">Click</button>
+
+        <br>
+        <button v-custom-directive="{name: 'emon', designation: 'engr'}">New Button</button>
         
     </div>
 
